@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Heartkeeper" preserve-order="true"
+    thread-count="1">
+       <test name="Test">
+        <classes>
+            <class name="heartkeeper.Register"></class>
+            <class name="heartkeeper.LoginViaFacebook"></class>
+            <class name="heartkeeper.LoginViaGoogle"></class>
+             <class name="heartkeeper.ForgotPassword"></class>
+            <class name="heartkeeper.Profile"></class>
+            <class name="heartkeeper.SpecifyBreakup"></class>
+            <class name="heartkeeper.OnBoardHealer"></class>
+           
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

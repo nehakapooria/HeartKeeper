@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Heartkeeper]">
+  <test name="Test">
+    <classes>
+      <class name="heartkeeper.Signup"/>
+      <class name="heartkeeper.LoginViaFacebook"/>
+      <class name="heartkeeper.LoginViaGoogle"/>
+      <class name="heartkeeper.ForgotPassword"/>
+      <class name="heartkeeper.Profile"/>
+      <class name="heartkeeper.SpecifyBreakup"/>
+      <class name="heartkeeper.OnBoardHealer"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="heartkeeper.Profile">
+        <methods>
+          <include name="setConnection"/>
+        </methods>
+      </class> <!-- heartkeeper.Profile -->
+      <class name="heartkeeper.Signup">
+        <methods>
+          <include name="setConnection"/>
+          <include name="signup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- heartkeeper.Signup -->
+      <class name="heartkeeper.SpecifyBreakup">
+        <methods>
+          <include name="setConnection"/>
+        </methods>
+      </class> <!-- heartkeeper.SpecifyBreakup -->
+      <class name="heartkeeper.ForgotPassword">
+        <methods>
+          <include name="setConnection"/>
+        </methods>
+      </class> <!-- heartkeeper.ForgotPassword -->
+      <class name="heartkeeper.LoginViaGoogle">
+        <methods>
+          <include name="logout"/>
+          <include name="logingoogle"/>
+          <include name="setConnection"/>
+        </methods>
+      </class> <!-- heartkeeper.LoginViaGoogle -->
+      <class name="heartkeeper.LoginViaFacebook">
+        <methods>
+          <include name="setConnection"/>
+          <include name="logout"/>
+          <include name="loginfb"/>
+        </methods>
+      </class> <!-- heartkeeper.LoginViaFacebook -->
+      <class name="heartkeeper.OnBoardHealer">
+        <methods>
+          <include name="setConnection"/>
+        </methods>
+      </class> <!-- heartkeeper.OnBoardHealer -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Heartkeeper] -->

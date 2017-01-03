@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33313" started-at="2017-01-03T11:50:06Z" finished-at="2017-01-03T11:50:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33313" started-at="2017-01-03T11:50:06Z" finished-at="2017-01-03T11:50:40Z">
+      <class name="heartkeeper.Signup">
+        <test-method status="PASS" signature="setConnection()[pri:0, instance:heartkeeper.Signup@7dc36524]" test-instance-name="" name="setConnection" is-config="true" duration-ms="9867" started-at="2017-01-03T17:20:06Z" finished-at="2017-01-03T17:20:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setConnection -->
+        <test-method status="PASS" signature="signupblank()[pri:1, instance:heartkeeper.Signup@7dc36524]" test-instance-name="" name="signupblank" duration-ms="4798" started-at="2017-01-03T17:20:16Z" description="Signup with Empty Values" finished-at="2017-01-03T17:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupblank -->
+        <test-method status="PASS" signature="signupexisting()[pri:2, instance:heartkeeper.Signup@7dc36524]" test-instance-name="" name="signupexisting" duration-ms="9717" started-at="2017-01-03T17:20:21Z" description="Signup with an Existing account" finished-at="2017-01-03T17:20:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupexisting -->
+        <test-method status="PASS" signature="clear()[pri:3, instance:heartkeeper.Signup@7dc36524]" test-instance-name="" name="clear" duration-ms="3179" started-at="2017-01-03T17:20:31Z" description="Clear Values in form" finished-at="2017-01-03T17:20:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method status="PASS" signature="signuppositive()[pri:4, instance:heartkeeper.Signup@7dc36524]" test-instance-name="" name="signuppositive" duration-ms="5728" started-at="2017-01-03T17:20:34Z" description="Signup Success" finished-at="2017-01-03T17:20:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signuppositive -->
+      </class> <!-- heartkeeper.Signup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
